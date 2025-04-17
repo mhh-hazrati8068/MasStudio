@@ -12,6 +12,7 @@ export const Page: React.FC = () => {
 
   return (
     <article>
+      {/* eslint-disable react/no-unescaped-entities */}
       <Header
         user={user}
         onLogin={() => setUser({ name: 'Jane Doe' })}
