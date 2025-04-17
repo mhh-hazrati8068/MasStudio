@@ -38,3 +38,54 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+
+
+- RoadMap of the project -->
+
+src/
+├── pages/               # Next.js routes
+│   ├── api/             # API routes (server-side)
+│   └── index.tsx        # Home page
+│   └── _app.tsx         # App entry point
+│   └── _document.tsx    # Custom document (for SSR and Emotion)
+│
+├── components/          # UI (View) components
+│   └── common/          # Reusable UI components (e.g., Button, Modal)
+│   └── user/            # User-related components (e.g., UserCard)
+│
+├── viewmodels/          # ViewModel hooks (logic between view & model)
+│   └── useUserViewModel.ts
+│
+├── models/              # TypeScript interfaces/types
+│   └── user.ts
+│
+├── services/            # API service functions
+│   └── userService.ts
+│
+├── store/               # Redux Toolkit setup
+│   ├── index.ts         # Store config
+│   └── slices/
+│       └── userSlice.ts
+│
+├── hooks/               # Reusable custom hooks (not tied to ViewModel)
+│   └── useDebounce.ts
+│
+├── styles/              # Global styles and theme setup
+│   ├── globals.scss
+│   └── theme.ts         # MUI theme config
+│
+├── utils/               # Utility functions
+│   └── formatDate.ts
+│
+├── tests/               # Unit and integration tests
+│   └── components/
+│   └── viewmodels/
+│
+├── __mocks__/           # Mock files for tests
+│   └── handlers.ts
+│
+├── storybook/           # Storybook setup and stories
+│   └── preview.ts
+│
+├── types/               # Global TypeScript definitions (optional)
+│   └── env.d.ts
